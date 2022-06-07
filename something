@@ -1,0 +1,758 @@
+//1.1
+int main()
+{
+int x = 0, y = 0, pointXLeft = -4, pointXRight = 3, pointYDown = -2, pointYUp = 4;
+cout Р’В« "x = ";
+cin Р’В» x;
+cout Р’В« "y = ";
+cin Р’В» y;
+if (x >= pointXLeft && x <= pointXRight && y >= pointYDown && y <= pointYUp)
+{
+cout Р’В« "YES";
+}
+else
+{
+cout Р’В« "NO";
+}
+return 0;
+}
+
+//1.2
+int main()
+{
+setlocale(LC_ALL, "Ru");
+cout Р’В« "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ Р С‘РЎРѓРЎРѓР В»Р ВµР Т‘РЎС“Р ВµР СРЎС“РЎР‹ РЎвЂљР С•РЎвЂЎР С”РЎС“ (x, y) \n";
+int PointX, PointY;
+cin Р’В» PointX Р’В» PointY;
+int PointX1 = -2, PointX2 = 0, PointX3 = 2, PointY1 = -3, PointY2 = 2, PointY3 = -3;
+int AB = (PointX1 - PointX) * (PointY2 - PointY1) - (PointY1 - PointY) * (PointX2 - PointX1);
+int BC = (PointX2 - PointX) * (PointY3 - PointY2) - (PointY2 - PointY) * (PointX3 - PointX2);
+int CA = (PointX3 - PointX) * (PointY1 - PointY3) - (PointY3 - PointY) * (PointX1 - PointX3);
+if ((AB >= 0 && BC >= 0 && CA >= 0) || (AB <= 0 && BC <= 0 && CA <= 0))
+{
+cout Р’В« "РЎвЂљР С•РЎвЂЎР С”Р В° (" Р’В« PointX Р’В« ';' Р’В« PointY Р’В« ") Р С—РЎР‚Р С‘Р Р…Р В°Р Т‘Р В»Р ВµР В¶Р С‘РЎвЂљ Р В·Р В°РЎв‚¬РЎвЂљРЎР‚Р С‘РЎвЂ¦Р С•Р Р†Р В°Р Р…Р Р…Р С•Р в„– Р С•Р В±Р В»Р В°РЎРѓРЎвЂљР С‘";
+}
+else
+{
+cout Р’В« "РЎвЂљР С•РЎвЂЎР С”Р В° (" Р’В« PointX Р’В« ';' Р’В« PointY Р’В« ") Р Р…Р Вµ Р С—РЎР‚Р С‘Р Р…Р В°Р Т‘Р В»Р ВµР В¶Р С‘РЎвЂљ Р В·Р В°РЎв‚¬РЎвЂљРЎР‚Р С‘РЎвЂ¦Р С•Р Р†Р В°Р Р…Р Р…Р С•Р в„– Р С•Р В±Р В»Р В°РЎРѓРЎвЂљР С‘";
+}
+}
+
+//1.3
+int main()
+{
+setlocale(LC_ALL, "Ru");
+cout Р’В« "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ Р С”Р С•РЎРЊРЎвЂћРЎвЂћР С‘РЎвЂ Р С‘Р ВµР Р…РЎвЂљРЎвЂ№ Р С”Р Р†Р В°Р Т‘РЎР‚Р В°РЎвЂљР Р…Р С–Р С• РЎС“РЎР‚Р В°Р Р†Р Р…Р ВµР Р…Р С‘РЎРЏ a, b, c \n";
+float a, b, c;
+cin Р’В» a Р’В» b Р’В» c;
+if (a == 0)
+{
+cout Р’В« "x=" Р’В« -c / b;
+}
+else
+{
+float d = sqrt(b * b - 4 * a * c);
+if (d == 0)
+{
+cout Р’В« "x = " Р’В« -b / (2 * a);
+}
+else if (d > 0)
+{
+float x1 = -b + d / (2 * a), x2 = -b - d / (2 * a);
+cout Р’В« "x1=" Р’В« x1 Р’В« " | x2=" Р’В« x2;
+}
+else
+{
+cout Р’В« "Р С”Р С•РЎР‚Р Р…Р ВµР в„– Р Р…Р ВµРЎвЂљ";
+}
+}
+}
+
+//1.4
+int main()
+{
+setlocale(LC_ALL, "Ru");
+cout Р’В« "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ Р Т‘Р ВµР Р…РЎРЉ \n";
+int a;
+cin Р’В» a;
+while (a >= 7)
+{
+a -= 7;
+}
+if (a == 1) {cout Р’В« "Р С—Р С•Р Р…Р ВµР Т‘Р ВµР В»РЎРЉР Р…Р С‘Р С”";}
+else if (a == 2) { cout Р’В« "Р Р†РЎвЂљР С•РЎР‚Р Р…Р С‘Р С”";}
+else if (a == 3) { cout Р’В« "РЎРѓРЎР‚Р ВµР Т‘Р В°"; }
+else if (a == 4) { cout Р’В« "РЎвЂЎР ВµРЎвЂљР Р†Р ВµРЎР‚Р С–"; }
+else if (a == 5) { cout Р’В« "Р С—РЎРЏРЎвЂљР Р…Р С‘РЎвЂ Р В°"; }
+else if (a == 6) { cout Р’В« "РЎРѓРЎС“Р В±Р В±Р С•РЎвЂљР В°"; }
+else { cout Р’В« " Р Р†Р С•РЎРѓР С”РЎР‚Р ВµРЎРѓР ВµР Р…Р С‘Р Вµ"; }
+}
+
+
+//8
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+int main()
+{
+    int x, y,x0,y0;
+    double r = 0;
+    
+    cin >> x;
+    cin >> y;
+    cin >> x0;
+    cin >> y0;
+    cin >> r;
+    r = 2 * abs(r) + 1;
+    int xy2 = pow((x - x0),2)  + pow((y - y0),2)  - pow(r,2) ;
+    if (xy2 < 0)
+    {
+        cout << "Vhodit v promezutok ";
+    }
+    else if (xy2 > 0)
+    {
+        cout << "NSnaruzhi ";
+    }
+    else
+        cout << "Na";
+}
+
+//10
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+int main()
+{
+    setlocale(0, "Russian");
+    int x, y,x0,y0;
+    double r = 0;
+    
+    cin >> x;
+    cin >> y;
+    cin >> x0;
+    cin >> y0;
+    if (x0 - x!=0)
+    {
+        y = (((-x) * (y0 - y) / (x0 - x)) + y);
+        cout << "Р С—Р ВµРЎР‚Р ВµРЎРѓР ВµР С”Р В°Р ВµРЎвЂљ";
+   }
+    else
+    {
+        cout << "no";
+    }
+}
+
+//14
+
+#include <iostream>
+int main()
+{
+	
+	using namespace std;
+	int a =0;
+	
+	
+	for (int i = 10; i <= 99; i++)
+	{
+		if (i % 10 > 0 && i%2==0)
+		{
+			a++;
+		}
+	}
+	cout << " Counts = " << a;
+    return 0;
+
+
+
+
+}
+
+
+//16
+
+#include <iostream>
+int main()
+{
+	
+	using namespace std;
+	int a =0;
+	cin >> a;
+	int b;
+	for (int i = 0; i <=a; i++)
+	{
+		if (i % 3 == 0  )
+		{
+			b = i * i;
+			if (b<=a)
+			{
+				cout <<' '<<b;
+			}
+		}
+	}
+	
+    return 0;
+
+
+
+
+}
+
+
+
+//17
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int var1 = 1;
+	int sum = 0;
+	int otr = 0;
+	while (var1 != 0)
+	{
+		cin >> var1;
+		if (var1 < 0) // Р С•РЎвЂљРЎР‚Р С‘РЎвЂ Р В°РЎвЂљР ВµР В»РЎРЉР Р…Р С•Р Вµ
+			otr++;
+		else if (var1 > 0) // Р С—Р С•Р В»Р С•Р В¶Р С‘РЎвЂљР ВµР В»РЎРЉР Р…Р С•Р Вµ
+			sum += var1;
+	}
+	cout << "Р С›РЎвЂљРЎР‚Р С‘РЎвЂ Р В°РЎвЂљР ВµР В»РЎРЉР Р…РЎвЂ№РЎвЂ¦ РЎвЂЎР С‘РЎРѓР ВµР В»: " << otr;
+	cout << "Р РЋРЎС“Р СР СР В° Р С—Р С•Р В»Р С•Р В¶Р С‘РЎвЂљР ВµР В»РЎРЉР Р…РЎвЂ№РЎвЂ¦: " << sum;
+	return 0;
+}
+
+
+//18
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    int a = 0, max = 0, i = 1;
+
+
+    do
+    {
+
+       
+        cin >> a;
+        
+
+        if (a >= max) max = a;
+       
+
+    } while (a != 0);
+    cout << max << endl;
+
+
+
+    return 0;
+}
+
+
+//19
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    int a = 0, max = 0, min = 0;
+
+
+    do
+    {
+
+
+        cin >> a;
+
+
+        if (a >= max)
+            max = a;
+        if (a <= min && a > 0)
+            min = a;
+
+    } while (a != 0);
+    
+
+    cout <<min << ' '<< max<< endl;
+
+
+
+    return 0;
+}
+
+//2.20
+int main()
+{
+int last = 0, sum = 0;
+setlocale(LC_ALL, "Ru");
+for (int i = 1; i < 7; i++)
+{
+int a;
+cin Р’В» a;
+if (last == a)
+{
+sum++;
+}
+else
+{
+last = a;
+}
+}
+cout Р’В« sum;
+}
+
+21//#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(0, "Russian");
+    const int N = 10;
+    int i, k = 0, s = 1;
+    int massiv[N], x = 0, j;
+    cout << "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ 10 РЎвЂ Р ВµР В»РЎвЂ№РЎвЂ¦ РЎвЂЎР С‘РЎРѓР ВµР В»\n";
+    for (i = 0; i < N; i++)
+        cin >> massiv[i];
+    for (i = 0; i < N; i++)
+        cout << "\n massiv[" << i << "] = " << massiv[i];
+
+
+    j = massiv[0];
+    for (i = 0; i < N; i++)
+    {
+        if (massiv[i] < j) {
+            j = massiv[i];
+            x = i + 1;
+        }
+    }
+    for (i = x; i < N; i++)
+        s = s * massiv[i];
+
+    cout << " Proizved=" << s;
+}
+
+
+22//#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(0,"Russian");
+    const int N = 5;
+    
+    int A[N];
+    cout << "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ РЎРѓР В°Р С Р СР В°РЎРѓРЎРѓР С‘Р Р†:" << endl;
+    for (int i = 0; i < N; i++)
+    {
+        cin >> A[i]; 
+    }
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = N - 1; j > i; j--)
+        {
+            if ((!(A[j - 1] >= 0)) && (A[j] >= 0)) 
+            {
+                swap(A[j - 1], A[j]);
+            }
+        }
+    }
+
+    
+
+    cout << "Р СљР В°РЎРѓРЎРѓР С‘Р Р† Р С—Р С•РЎРѓР В»Р Вµ РЎРѓР Т‘Р Р†Р С‘Р С–Р В° РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р Р†:" << endl;
+    for (int i = 0; i < N; i++)
+    {
+        cout << A[i] << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+
+23//#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	setlocale(0, "Russian");
+	const int N = 8;
+	int i, k = 0, s = 0;
+	float b = 0;
+	int massiv[N], x = 0, j;
+	cout<< "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ 10 РЎвЂ Р ВµР В»РЎвЂ№РЎвЂ¦ РЎвЂЎР С‘РЎРѓР ВµР В»\n";
+	for (i = 0; i < N; i++)
+		cin>> massiv[i];
+	for (i = 0; i < N; i++)
+		cout << "\n massiv[" << i << "] = " << massiv[i];
+
+	j = massiv[0];
+	for (i = 0; i < N; i++)
+	{
+		if (massiv[i] < j) {
+			j = massiv[i];
+			x = i;
+		}
+		
+	}
+
+	for (i = 0; i < x; i++)
+	{
+		if (massiv[i] > 0)
+		{
+			s += massiv[i];
+		}
+			
+	}
+	float product = 0;
+	product = s / x;
+	cout << " Proizved=" << product;
+	
+}
+
+24//#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	setlocale(0, "Russian");
+	const int N = 5;
+	int i, k = 0, s = 0;
+	float b = 0;
+	int massiv[N], x = 0, max;
+	cout << "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ 10 РЎвЂ Р ВµР В»РЎвЂ№РЎвЂ¦ РЎвЂЎР С‘РЎРѓР ВµР В»\n";
+	for (i = 0; i < N; i++)
+		cin >> massiv[i];
+	for (i = 0; i < N; i++)
+		cout << "\n massiv[" << i << "] = " << massiv[i];
+
+	max = massiv[0];
+	int Sum = 0;
+	for (i = 0; i < N; i++)
+	{
+		if (massiv[i] > max)
+		{
+			max = massiv[i];
+		}
+
+	}
+	for (int i = 0; i < N; i++)
+	{
+		if (massiv[i] + 1 == max)
+		{
+			Sum = Sum + massiv[i];
+		}
+	}
+
+	cout << " Proizved=" << Sum;
+
+}
+
+25//#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	setlocale(0, "Russian");
+	const int N = 5;
+	int i, k = 0, s = 0,min;
+	int massiv[N], x = 0, max;
+	cout<< "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ 10 РЎвЂ Р ВµР В»РЎвЂ№РЎвЂ¦ РЎвЂЎР С‘РЎРѓР ВµР В»\n";
+	for (i = 0; i < N; i++)
+		cin>> massiv[i];
+	for (i = 0; i < N; i++)
+		cout << "\n massiv[" << i << "] = " << massiv[i];
+
+	min=max=massiv[0];
+	for (i = 0; i < N; i++)
+	{
+		if (massiv[i] > max) 
+		{
+			max = massiv[i];
+		}
+		if (massiv[i] < min)
+		{
+			min = massiv[i];
+		}
+		
+	}
+
+	double average = 0;
+
+	for (i = min + 1;i!=max;i++)
+	{
+		average += i;
+	}
+	double b = average / (max - min-1 );
+
+	cout << "Average = " << b;
+	cout << " Proizved=" <<s;
+	
+}
+
+//26
+
+#include <iostream>
+#include <cmath>
+/*
+* 26. Р вЂќР В°Р Р…Р В° Р СР В°РЎвЂљРЎР‚Р С‘РЎвЂ Р В° A(10,10). Р СџР С•РЎРѓРЎвЂљРЎР‚Р С•Р С‘РЎвЂљРЎРЉ Р Р†Р ВµР С”РЎвЂљР С•РЎР‚ Р вЂ™ Р С‘Р В· РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р Р† Р С—Р С•Р В±Р С•РЎвЂЎР Р…Р С•Р в„– Р Т‘Р С‘Р В°Р С–Р С•Р Р…Р В°Р В»Р С‘. Р вЂ™
+Р Р…Р С•Р Р†Р С•Р С Р Р†Р ВµР С”РЎвЂљР С•РЎР‚Р Вµ Р С—Р С•Р СР ВµР Р…РЎРЏРЎвЂљРЎРЉ Р СР ВµРЎРѓРЎвЂљР В°Р СР С‘ Р СР С‘Р Р…Р С‘Р СР В°Р В»РЎРЉР Р…РЎвЂ№Р в„– Р С‘ Р СР В°Р С”РЎРѓР С‘Р СР В°Р В»РЎРЉР Р…РЎвЂ№Р в„– РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљРЎвЂ№.
+*/
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	const int n = 10;
+
+
+	int arr[n][n], b[n];
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			arr[i][j] = rand() % 50;
+			std::cout << arr[i][j] << "\t";
+		}
+		b[i] = arr[i][n - 1 - i];
+		std::cout << std::endl;
+	}
+
+	std::cout << "Р вЂ™Р ВµР С”РЎвЂљР С•РЎР‚ Р вЂ™: " << "\n";
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << b[i] << "\n";
+	}
+
+	int max = b[0], max_i = 0, min = b[0], min_i = 0;
+
+	for (int i = 0; i < n; i++)
+	{
+		if (i == 0 || max <= b[i])
+		{
+			max = b[i];
+			max_i = i;
+		}
+		if (i == 0 || min >= b[i])
+		{
+			min = b[i];
+			min_i = i;
+		}
+	}
+
+	int k = b[min_i];
+	b[min_i] = b[max_i];
+	b[max_i] = k;
+
+
+	std::cout << "Р вЂ™Р ВµР С”РЎвЂљР С•РЎР‚ Р вЂ™: " << "\n";
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << b[i] << "\n";
+	}
+
+	return 0;
+}
+
+29)#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+int main()
+{
+    setlocale(0, "Russian");
+    const int N = 6,M=6;
+    int A[N][M], k;
+    cout << "Р вЂ™Р Р†Р ВµР Т‘Р С‘РЎвЂљР Вµ Р СР В°РЎвЂљРЎР‚Р С‘РЎвЂ РЎС“:" << endl;
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            cout << '[' << i << ']' << '[' << j << ']';
+            cin >> A[i][j];
+        }
+        cout << endl;
+    }
+    k = 0;
+    for (int j = 0; j < N - 1; j++)
+    {
+        for (int i = j + 1; i < M; i++)
+        {
+            if (A[i][j] == A[j][i])
+            {
+                k++;
+            }
+        }
+    }
+    if (k == (pow(N, 2) - N) / 2)
+    {
+        cout << "РЎРѓР С‘Р СР СР ВµРЎвЂљРЎР‚Р С‘РЎвЂЎР Р…Р В°" << endl;
+        for (int i = 0; i < N; i++)
+        {
+            A[i][i] = 0;
+            for (int j = 0; j < M; j++)
+            {
+                cout << A[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+    else
+    {
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < M; j++)
+            {
+                cout << setw(6) << A[i][j];
+            }
+            cout << "\n";
+            
+        }
+        cout << " Р Р…Р Вµ РЎРѓР С‘Р СР СР ВµРЎвЂљРЎР‚Р С‘РЎвЂЎР Р…Р В°" << endl;
+        return 0;
+    }
+}
+
+
+30)#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main(void)
+{
+    setlocale(LC_ALL, "Russian");
+    enum { N = 8, MAX_RAND = 99 };
+   cout << "Р СљР В°РЎвЂљРЎР‚Р С‘РЎвЂ Р В°:" << std::endl;
+    srand(size_t(time(NULL)));
+    int matrix[N][N];
+    for (size_t i(0); i < N; i++) {
+        for (size_t j(0); j < N; j++) {
+            matrix[i][j] = 1 + rand() % MAX_RAND;
+            std::cout << matrix[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+    
+    int max(matrix[0][0]), min[2]{ matrix[0][0], 0 };
+    for (size_t i(0); i < N; i++)
+        for (size_t j(0); j < N; j++) {
+            if (matrix[i][j] > max)
+                max = matrix[i][j];
+            if (matrix[i][j] < min[0]) {
+                min[0] = matrix[i][j];
+                min[1] = j;
+            }
+        }
+   
+    for (size_t i(0); i < N; i++)
+        matrix[i][min[1]] *= max;
+   
+    std::cout << "Р СљР В°Р С”РЎРѓР С‘Р СР В°Р В»РЎРЉР Р…РЎвЂ№Р в„– РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљ: " << max << std::endl
+        << "Р СњР С•Р СР ВµРЎР‚ Р С”Р С•Р В»Р С•Р Р…Р Р…РЎвЂ№ РЎРѓ Р СР С‘Р Р…Р С‘Р СР В°Р В»РЎРЉР Р…РЎвЂ№Р С РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р С: " << min[1] + 1 << std::endl
+        << "Р С™Р С•Р Р…Р ВµРЎвЂЎР Р…Р В°РЎРЏ Р СР В°РЎвЂљРЎР‚Р С‘РЎвЂ Р В°:" << std::endl;
+    for (size_t i(0); i < N; i++) {
+        for (size_t j(0); j < N; j++)
+            std::cout << matrix[i][j] << " ";
+        std::cout << std::endl;
+    }
+ 
+    return 0;
+}
+
+36)#include <iostream>
+using namespace std;
+/*
+* 36. Р вЂќР В°Р Р… РЎРѓР С‘Р СР Р†Р С•Р В»РЎРЉР Р…РЎвЂ№Р в„– Р СР В°РЎРѓРЎРѓР С‘Р Р†, Р С•Р В±РЎР‚Р В°Р В·Р С•Р Р†Р В°Р Р…Р Р…РЎвЂ№Р в„– Р С‘Р В· РЎРѓР В»Р С•Р Р†, РЎР‚Р В°Р В·Р Т‘Р ВµР В»Р ВµР Р…Р Р…РЎвЂ№РЎвЂ¦ Р С—РЎР‚Р С•Р В±Р ВµР В»Р В°Р СР С‘. Р РЋ
+Р С‘РЎРѓР С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°Р Р…Р С‘Р ВµР С Р С—РЎР‚Р С•РЎвЂ Р ВµР Т‘РЎС“РЎР‚ Р С‘ РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р в„– Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р С‘РЎвЂљРЎРЉ:
+1. Р вЂ™РЎвЂ№Р Т‘Р В°РЎвЂљРЎРЉ Р Р…Р В° Р С—Р ВµРЎвЂЎР В°РЎвЂљРЎРЉ РЎРѓР В»Р С•Р Р†Р В° Р СР В°Р С”РЎРѓР С‘Р СР В°Р В»РЎРЉР Р…Р С•Р в„– Р Т‘Р В»Р С‘Р Р…РЎвЂ№;
+2. Р Р€Р Т‘Р В°Р В»Р С‘РЎвЂљРЎРЉ Р С‘Р В· РЎРѓР В»Р С•Р Р†, Р С‘Р СР ВµРЎР‹РЎвЂ°Р С‘РЎвЂ¦ Р Р…Р ВµРЎвЂЎР ВµРЎвЂљР Р…РЎС“РЎР‹ Р Т‘Р В»Р С‘Р Р…РЎС“ РЎРѓРЎР‚Р ВµР Т‘Р Р…РЎР‹РЎР‹ Р В±РЎС“Р С”Р Р†РЎС“;
+3. Р СџРЎР‚Р С•Р Р†Р ВµРЎР‚Р С‘РЎвЂљРЎРЉ, Р ВµРЎРѓРЎвЂљРЎРЉ Р В»Р С‘ Р Р† РЎвЂљР ВµР С”РЎРѓРЎвЂљР Вµ РЎРѓР С‘Р СР СР ВµРЎвЂљРЎР‚Р С‘РЎвЂЎР Р…РЎвЂ№Р Вµ РЎРѓР В»Р С•Р Р†Р В°;
+4. Р СџР ВµРЎР‚Р ВµР Р…Р ВµРЎРѓРЎвЂљР С‘ Р С—Р ВµРЎР‚Р Р†РЎС“РЎР‹ Р В±РЎС“Р С”Р Р†РЎС“ РЎС“Р С”Р В°Р В·Р В°Р Р…Р Р…Р С•Р С–Р С• РЎРѓР В»Р С•Р Р†Р В° Р Р† Р С”Р С•Р Р…Р ВµРЎвЂ  РЎРѓР В»Р С•Р Р†Р В°;
+5. Р С›Р С—РЎР‚Р ВµР Т‘Р ВµР В»Р С‘РЎвЂљРЎРЉ Р С”Р С•Р В»Р С‘РЎвЂЎР ВµРЎРѓРЎвЂљР Р†Р С• РЎРѓР В»Р С•Р Р† Р Р† РЎвЂљР ВµР С”РЎРѓРЎвЂљР Вµ, Р С•Р С”Р В°Р Р…РЎвЂЎР С‘Р Р†Р В°РЎР‹РЎвЂ°Р С‘РЎвЂ¦РЎРѓРЎРЏ Р Р…Р В° Р В·Р В°Р Т‘Р В°Р Р…Р Р…РЎС“РЎР‹ Р В±РЎС“Р С”Р Р†РЎС“.
+
+*/
+int max_word_len(const char* s);
+bool is_symmetric(const char* s);
+//char* remove_max_words(char* s);
+int main()
+{
+
+    //setlocale(0, "Russian");
+    char s[] = "COBOL LISP FORTH APL ALGOL ADA JAVA2";//РЎРѓРЎвЂљРЎР‚Р С•Р С”Р В°, Р Р† Р С”Р С•РЎвЂљР С•Р С•РЎР‚Р С•Р в„– Р С‘Р Т‘Р ВµРЎвЂљ Р С—Р С•Р С‘РЎРѓР С”
+    cout << max_word_len(s) << endl << "\n";
+    cout << is_symmetric(s) << endl;
+}
+//max dlina slova
+int max_word_len(const char* s)
+{
+    const char delim[] = " \t\n";//РЎРѓРЎвЂљРЎР‚Р С•Р С”Р В° Р С‘РЎРѓР С”Р С•Р СРЎвЂ№РЎвЂ¦ РЎРѓР С‘Р СР Р†Р С•Р В»Р С•Р Р†
+    int n = 0, i = 0;
+    while (*s)
+    {
+        i = std::strspn(s, delim);//Р С—Р С•Р С‘РЎРѓР С” РЎРѓРЎвЂљРЎР‚Р С•Р С”Р С‘ Р Р† Р С—Р С•Р Т‘РЎРѓРЎвЂљРЎР‚Р С•Р С”Р Вµ
+        s += i;
+        if (!*s)
+            break;
+
+        i = std::strcspn(s, delim);
+        s += i;
+        if (i > n)
+            n = i;
+    };
+    cout << "dlina slova " << i;
+    return n;
+}
+//delete the middle char
+int delete_middle_char(const char* s)
+{
+    const char delim[] = " \t\n";//РЎРѓРЎвЂљРЎР‚Р С•Р С”Р В° Р С‘РЎРѓР С”Р С•Р СРЎвЂ№РЎвЂ¦ РЎРѓР С‘Р СР Р†Р С•Р В»Р С•Р Р†
+    int n = 0, i = 0;
+    while (*s)
+    {
+        i = std::strspn(s, delim);//Р С—Р С•Р С‘РЎРѓР С” РЎРѓРЎвЂљРЎР‚Р С•Р С”Р С‘ Р Р† Р С—Р С•Р Т‘РЎРѓРЎвЂљРЎР‚Р С•Р С”Р Вµ
+        s += i;
+        if (!*s)
+            break;
+
+        i = std::strcspn(s, delim);
+        s += i;
+        if (i > n)
+            n = i;
+    };
+    cout << "dlina slova " << n;
+    return n;
+}
+//symetric
+
+ bool is_symmetric (const char * s)
+{
+     const char* t = s + strlen(s) - 1;
+     while (s < t)
+     {
+         if (*s++ != *t--)
+             return 0;
+     }
+         
+     return 1;
+}
